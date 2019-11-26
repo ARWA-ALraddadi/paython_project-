@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title> Popup Boxes</title>
+</head>
+
+<body>
+
+        <h1>Temperature Conversion</h1>
+        
+        <script type="text/javascript">
+        
+        // Generate a prompt to enter a temperature in Fahrenheit
+        document.write("User's input in Fahrenheit: "); 
+        degFahrenheit = prompt("Enter degrees in Fahrenheit", 0);
+
+        // Display the value entered
+        document.write(degFahrenheit);
+        
+        // Generate a confirm box to get user's confirmation
+        response = confirm("Do you want to convert this value?");
+        
+        // If the user wants to proceed, calculate the temperature in
+        // Celsius and display the result, or generate an alert box  
+        if (response) {
+
+                // Calculate the result
+                degCelsius = 5/9 * (degFahrenheit - 32);
+        
+                // Display the result, rounded to the nearest integer
+                document.write("<p>" + degFahrenheit + "\xB0 Fahrenheit is " +
+                    Math.round(degCelsius) + "\xB0 Centigrade </p>");
+        }
+        else {
+                alert("Job Cancelled!");
+        }
+
+</script>
+
+</body>
+</html>
