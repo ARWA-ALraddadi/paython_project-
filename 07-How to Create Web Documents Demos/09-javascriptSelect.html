@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <title> University Locations (using a dropdown list) </title>
+
+        <script type="text/javascript">
+
+                // Display the selected university location
+                function getLocation()
+                {
+                        // Initialise the array of locations
+                        location[0] = "Canberra";
+                        location[1] = "Brisbane";
+                        location[2] = "Adelaide";
+                        location[3] = "Melbourne";
+                        location[4] = "Sydney";
+                        location[5] = "Perth";
+
+                        // Get a select object via its id
+                        list = document.getElementById("select university");
+
+                        // Get the index of the item selected by the user
+                        index = list.selectedIndex;
+                        
+                        // Get the corresponding university name
+                        university  = list.options[index].text;
+                        
+                        // Display the result in paragraph 'result'
+                        document.getElementById("result").innerHTML =
+                            "The location of " + university +
+                            " is " + location[index]
+                }
+        </script>
+</head>
+
+<body>
+        <h1> Location of Universities in Australia </h1>
+ 
+        <p>Please choose a university</p>
+        
+        <!-- Define a select component to store all the options to choose from -->
+        <select id="select university" onchange="getLocation()">
+                <option> The Australian National University </option>
+                <option> The Queensland University of Technology </option>
+                <option> The University of Adelaide </option>
+                <option> The University of Melbourne </option>
+                <option> The University of Sydney </option>
+                <option> Edith Cowan University </option>
+                <option selected="selected"> None </option>
+        </select>
+
+        <!-- Initialise the results paragraph, giving it an id -->       
+        <p id="result">
+            <!-- No text in this paragraph yet -->
+        </p>
+ 
+</body>
+</html> 
+
+       

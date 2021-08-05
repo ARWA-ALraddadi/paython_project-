@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>University Locations (using buttons)</title>
+
+        <script type="text/javascript">
+
+                // Display the selected university's location
+                function getLocation(index)
+                {
+                        // Define the array of cities
+                        location[1] = "Canberra";
+                        location[2] = "Brisbane";
+                        location[3] = "Adelaide";
+                        location[4] = "Melbourne";
+                        location[5] = "Sydney";
+                        // Change the HTML code in the chosen button 
+                        document.getElementById(index).innerHTML = location[index];
+                }
+        </script>
+</head>
+
+<body>
+        <h1> Universities in Australia</h1>
+
+        <!-- Define a button component for each university,
+             each button with a distinct identifier -->
+        <p> Australian National University </p>       
+        <button id=1 onclick="getLocation(1)"> Get Location </button>    
+
+        <p> Queensland University of Technology  </p>  
+        <button id=2  onclick="getLocation(2)"> Get Location </button>
+         
+        <p> University of Adelaide </p>  
+        <button id=3   onclick="getLocation(3)"> Get Location </button>
+
+        <p> University of Melbourne </p>  
+        <button id=4   onclick="getLocation(4)"> Get Location </button>
+
+        <p> University of Sydney </p>  
+        <button id=5  onclick="getLocation(5)"> Get Location </button>
+ 
+</body>
+</html> 
+
+       
