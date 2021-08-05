@@ -1,16 +1,3 @@
-#-----Statement of Authorship----------------------------------------#
-#
-#  By submitting this task I agree that it represents my own work.
-#  I am aware of the University rule that a student must not
-#  act in a manner which constitutes academic dishonesty as stated
-#  and explained in QUT's Manual of Policies and Procedures,
-#  Section C/5.3 "Academic Integrity" and Section E/2.1 "Student
-#  Code of Conduct".
-#
-#  Student no: N9514368
-#  Student name: Arwa Alraddadi 
-#
-#--------------------------------------------------------------------#
 
 #----------------------------------------------------------------
 #
